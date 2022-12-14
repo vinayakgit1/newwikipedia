@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+    
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    
+    background-color: rgb(180, 176, 176);
+    flex-grow: 1;
+    flex-shrink: 8;
+    padding: 10px;
+    text-align: center;
+ 
+    
+}
+aside h1{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: lightgray;
+}
+.mainsection{
+    
+    flex-grow: 9;
+    flex-basis: 600px;
+    flex-shrink: 2;
+    padding: 20px;
+    justify-content: center;
+    
+    
+}
+#img1 {
+    width:150px;
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom:10px ;
+    align-items: center;
+    
+}
+.left{
+    display: flex;
+    
+    
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px ;
+    border: solid lightgrey;
+    
+}
+.para{
+    flex-basis: 600px;
+    text-align: justify;
+    flex-grow: 8;
+    padding: 10px;
+    
+}
+.para-image{
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    
+    
+}
+
+ img{
+    
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+ }   
+
+.left li{
+    margin-top:20px ;
+    border: solid 2px lightgray;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom:0 ;
+    flex-grow: 1;
+    
+    
+}
+.details{
+    background-color: rgb(193, 192, 192);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+.right input{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+.login{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-bottom: 10px;
+    background-color: lightgray;
+    font-weight: bold;
+    
+}
+.logmenu{
+    border: solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.para{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content:space-between;
+}
+.para p{
+    flex-basis: 400px;
+}
+
+ #img1{
+        min-width: 200px;
+    }
+    aside h1{
+        font-size: 46px;
+        font-weight: bold;
+        
+    }
+    
+    aside ul{
+        font-size: 26px;
+    }
+
+
+
+    @media all and (min-width:200px) {
+        h1{
+            background-color: red;
+            
+    
+        }
+  
+        aside h1{
+            font-size: 38px;
+        }
+        #img1{
+            min-width: 250px;
+        }
+        .login{
+            
+            flex-direction: row;
+        }
+        
+        .maincontainer{
+            margin-right:0;
+            margin-left: 5px;
+            
+            
+        }
+        .details img{
+            min-width: 250px;
+        }
+        
+        .login{
+            align-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .left{
+            padding-bottom: 20px;
+        }
+    
+@media all and (min-width:400px) {
+    h1{
+        background-color: pink; 
+
+    }
+    #img1{
+        min-width: 350px;
+    }
+    .para{
+        display: flex;
+    }
+    
+    .login{
+        
+        flex-direction: row;
+    
+    }
+    .maincontainer{
+        margin-left: 10px;
+        margin-right: 0px;
+
+    }
+    .details img{
+        min-width: 400px;
+    }
+    
+}
+@media all and (min-width:600px) {
+    h1{
+        background-color:green; 
+
+    }
+    #img1{
+        min-width: 400px;
+    }
+    .maincontainer{
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .details img{
+        min-width: 600px;
+    }
+    
+  
+}
+@media all and (min-width:800px) {
+    h1{
+        background-color: blue; 
+        color: white;
+
+    }
+    .details img{
+        min-width: 700px;
+    }
+    #img1{
+        min-width: 400px;
+    }
+    .maincontainer{
+        padding-left: 0px;
+        
+        
+        
+    }
+    .mainsection{
+        margin-right: 0px;
+        margin-left: 0;
+    }
+ 
+}
+@media all and (min-width:1000px) {
+    h1{
+        background-color: orange; 
+
+    }
+    
+
+    #img1{
+        min-width: 200px;
+    }
+    .maincontainer{
+        margin: 20px;
+        
+    }
+}
+@media all and (min-width:1200px) {
+    h1{
+        background-color: purple; 
+
+
+    }
+
+    #img1{
+        min-width: 200px;
+    }
+    .maincontainer{
+        margin: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+
+}
+    }
